@@ -70,7 +70,7 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
-        <Link href={Linkk}></Link>
+        <Link href={Linkk}>Visit</Link>
       </section>
     </motion.div>
   );
