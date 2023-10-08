@@ -1,25 +1,24 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { identityData } from "@/lib/data";
 
-type ProjectProps = (typeof projectsData)[number];
+type IdentityProps = (typeof identityData)[number];
 
 export default function Identity({
   title,
   description,
   tags,
   imageUrl,
-}: ProjectProps) {
+}: IdentityProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
 
   return (
     <motion.div
@@ -36,8 +35,15 @@ export default function Identity({
           {description}
         </p>
         <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-         
-        </ul>
+            {tags.map((tag, index) => (
+              <li
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                key={index}
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
       </div>
 
       <Image
