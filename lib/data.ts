@@ -84,7 +84,7 @@ export const projectsData = [
       "my portfolio website using react,nextjs and freamer motion.",
       tags: ["full stack website"],
     imageUrl: wordanalyticsImg,
-    Linkk:"https://personal-portfolio-five-mu.vercel.app/"
+    Linkk:"https://Abdulhakim.vercel.app/"
   },
 ] as const;
 export const identityData = [
