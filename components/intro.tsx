@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="media  mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] bg-gradient-to-r from-cyan-500 to-blue-500 p-20  bord sm:rounded-none "
+      className="  mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] bg-gradient-to-r from-cyan-500 to-blue-500 p-20  bord sm:rounded-none "
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -115,7 +115,9 @@ export default function Intro() {
         >
           <FaGithubSquare />
         </a>
-          <p>+251906969595</p>
+
+        <div className="text-black">+251906969595</div>
+       
       </motion.div>
     </section>
   );
