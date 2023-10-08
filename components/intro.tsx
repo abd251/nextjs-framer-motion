@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="  mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] bg-gradient-to-r from-cyan-500 to-blue-500 p-20  bord sm:rounded-none "
+      className=" intro mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] bg-gradient-to-r from-cyan-500 to-blue-500 p-20   "
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -67,7 +67,7 @@ export default function Intro() {
         <span className="font-bold">Skilled and experienced</span> {" "}web developer{""}
         <span className="font-bold">{" "},I develop production ready Backends with third party APIs integrations,
          Full-Stack web developer, Reusable Frontend Components.</span> \I enjoy
-        building <span className="italic">sites & apps</span>
+        building <span className="italic">sites</span>
         
       </motion.h1>
 
