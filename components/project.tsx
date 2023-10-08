@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
+import { link } from "fs";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +14,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  Linkk
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -20,7 +23,9 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-
+  
+  
+   
   return (
     <motion.div
       ref={ref}
@@ -65,6 +70,7 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
+        <Link href={Linkk}></Link>
       </section>
     </motion.div>
   );
